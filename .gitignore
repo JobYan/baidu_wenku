@@ -1,5 +1,7 @@
 *.spec
 .idea
 others
-src/__pycache__/
 .DS_Store
+src/__pycache__/
+build/
+dist/

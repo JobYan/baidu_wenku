@@ -130,5 +130,6 @@ if __name__ == "__main__":
     url = "https://wenku.baidu.com/view/e966626f7cd184254b3535d7"  # PDF
     url = "https://wenku.baidu.com/view/ce7b269b72fe910ef12d2af90242a8956becaa7c.html"
     url = "https://wenku.baidu.com/view/8b4702b38762caaedc33d400?aggId=ce7b269b72fe910ef12d2af90242a8956becaa7c&fr=catalogMain&_wkts_=1670763996834"
-    a = wenku()
-    a.process(url)
+
+    wk = wenku()
+    wk.process(url)
