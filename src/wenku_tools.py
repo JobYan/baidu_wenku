@@ -12,6 +12,7 @@
 import os
 import re
 import urllib
+import datetime
 
 import fitz
 import requests
@@ -20,14 +21,14 @@ from bs4 import BeautifulSoup
 
 # 下载html
 def download(url, user_agent="wswp", num_retries=2):
-    print("Downloading: ", url)
+    # print("Downloading: ", url)
     headers = {"User-agent": user_agent}
     request = urllib.request.Request(url, headers=headers)
     try:
         html = urllib.request.urlopen(request)
         # print(html.read().decode("utf-8"))
     except urllib.error.URLError as e:
-        print("Download error: ", e.reason)
+        # print("Download error: ", e.reason)
         html = None
         if num_retries > 0:
             if hasattr(e, 'code') and 500 <= e.code <= 600:
@@ -104,13 +105,14 @@ class wenku():
             os.makedirs(self.image_dir)
 
     def process(self, url):
-        if not url:
-            print("URL为空")
+        # if not url:
+        #     print("URL为空")
         self.get_cookie()  # 获取cookie
         self.html_content = requests.get(url, headers=self.header, cookies=self.cookie).content
         self.title = re.findall("\"title\":\"(.*?)\"", self.html_content.decode('utf-8'))[-1]
         self.type = re.findall("\"fileType\"\:\"(.*?)\"", self.html_content.decode('utf-8'))[0]
-        self.dir = os.path.join(self.dir, self.title)
+        time_str = datetime.datetime.now().strftime('_%H_%M_%S')
+        self.dir = os.path.join(self.dir, self.title + time_str)
         self.image_dir = os.path.join(self.dir, "images")
 
         self.create_dir()

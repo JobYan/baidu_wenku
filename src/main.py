@@ -35,15 +35,20 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # self.setWindowIcon(QIcon('./image/icon.ico'))
 
     def process(self):
-        self.wenku.dir = self.dir
-        if not self.ldt_link.text():
+        try:
+            self.wenku.dir = self.dir
+            if not self.ldt_link.text():
+                QMessageBox.warning(self, "提示", "请填写正确的文库链接")
+            else:
+                self.wenku.process(self.ldt_link.text())
+        except:
             QMessageBox.warning(self, "提示", "请填写正确的文库链接")
-        else:
-            self.wenku.process(self.ldt_link.text())
 
     def select_dir(self):
-        self.dir = QFileDialog.getExistingDirectory(None, '选择保存路径', self.dir)
-        self.wenku.dir = self.dir
+        save_dir = QFileDialog.getExistingDirectory(None, '选择保存路径', self.dir)
+        if save_dir:
+            self.wenku.dir = save_dir
+            self.dir = save_dir
 
     def open_dir(self):
         # os.startfile(self.dir)
