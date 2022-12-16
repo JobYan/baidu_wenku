@@ -107,6 +107,8 @@ class wenku():
     def process(self, url):
         # if not url:
         #     print("URL为空")
+        self.link_list = []
+        self.image_path_list = []
         self.get_cookie()  # 获取cookie
         self.html_content = requests.get(url, headers=self.header, cookies=self.cookie).content
         self.title = re.findall("\"title\":\"(.*?)\"", self.html_content.decode('utf-8'))[-1]
