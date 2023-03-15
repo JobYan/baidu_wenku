@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>关于</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>601</width>
+      <height>295</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-size:16pt;&quot;&gt;我是「&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-size:16pt; font-weight:600;&quot;&gt;Job Yan&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-size:16pt;&quot;&gt;」，终身学习爱好者，一个热爱技术、干货多多的 Coder。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'PingFang SC'; font-size:16pt;&quot;&gt;「&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-size:14pt;&quot;&gt;Job Yan&lt;/span&gt;&lt;span style=&quot; font-family:'PingFang SC'; font-size:16pt;&quot;&gt;」专注人工智能技术与编程技术知识分享。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'PingFang SC'; font-size:16pt;&quot;&gt;乐享技术，乐享生活：技术、乐趣、财富、生活。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/weixin/weixin.png&quot; width=&quot;350&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue','Helvetica','Hiragino Sans GB','Microsoft YaHei','Arial','sans-serif'; font-size:16pt; font-weight:600; color:#000000;&quot;&gt;      程序的一些说明：&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'PingFang SC'; font-size:14pt;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;本软件会永久开源并且永不收费，仅供喜欢爬虫技术的小伙伴们学习使用；&lt;/li&gt;
+&lt;li style=&quot; font-family:'PingFang SC'; font-size:14pt;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;软件可能会由于各种原因而不能使用，请不要依赖此软件；&lt;/li&gt;
+&lt;li style=&quot; font-family:'PingFang SC'; font-size:14pt;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;本次开发的软件仅支持&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; PPT &lt;/span&gt;文件和&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; PDF &lt;/span&gt;文件的下载，暂不支持&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; WORD &lt;/span&gt;文件和&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; TXT &lt;/span&gt;文件的下载；&lt;/li&gt;
+&lt;li style=&quot; font-family:'PingFang SC'; font-size:14pt;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;软件爬取到的文件和文库中的原文件是有区别的，以&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; PPT &lt;/span&gt;类型的文件为例，我们在文档页面看到的内容其实是&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; PPT &lt;/span&gt;经过渲染后的图片。所以我们可以利用&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; Python &lt;/span&gt;等编写爬虫脚本，爬取网页中的相关图片，再将这些图片合并成&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; PDF &lt;/span&gt;文档。如果想要获取可编辑的&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; PPT &lt;/span&gt;文件，可能需要你用「钞能力」支持一下文库。 &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resouses.qrc"/>
+ </resources>
+ <connections/>
+</ui>

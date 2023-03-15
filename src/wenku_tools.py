@@ -126,8 +126,7 @@ class wenku():
 
 if __name__ == "__main__":
     user_agent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
-    header = {
-        'User-Agent': user_agent}
+    header = {'User-Agent': user_agent}
     res = requests.get('https://wenku.baidu.com', headers=header)
     cookie = res.cookies
 

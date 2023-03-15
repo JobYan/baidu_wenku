@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="weixin">
+    <file>weixin.png</file>
+  </qresource>
+</RCC>
