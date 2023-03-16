@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="weixin">
+    <file>icon.ico</file>
     <file>weixin.png</file>
   </qresource>
 </RCC>

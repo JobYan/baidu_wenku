@@ -19,13 +19,18 @@
      <rect>
       <x>640</x>
       <y>20</y>
-      <width>122</width>
+      <width>140</width>
       <height>171</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QPushButton" name="btn_download">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>开始下载</string>
        </property>
@@ -33,6 +38,11 @@
      </item>
      <item>
       <widget class="QPushButton" name="btn_selectdir">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>选择下载路径</string>
        </property>
@@ -40,6 +50,11 @@
      </item>
      <item>
       <widget class="QPushButton" name="btn_opendir">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>打开下载路径</string>
        </property>
@@ -53,25 +68,41 @@
       <x>30</x>
       <y>40</y>
       <width>601</width>
-      <height>23</height>
+      <height>24</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>文库链接</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="ldt_link"/>
+      <widget class="QLineEdit" name="ldt_link">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
    <property name="windowTitle">
     <string>toolBar</string>
    </property>

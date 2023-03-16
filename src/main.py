@@ -14,18 +14,20 @@ import os
 import sys
 
 from PyQt5 import QtWidgets, QtCore
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QWidget, QMainWindow, QFileDialog, QMessageBox
 
 import wenku_tools
-from window import Ui_MainWindow
 import window_about
 import window_help
+from window import Ui_MainWindow
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(QWidget, self).__init__()
         self.init_ui()
+        self.setWindowIcon(QIcon(":/weixin/icon.ico"))
         self.setFixedSize(self.width(), self.height())  # 固定窗口大小
         self.action_connect()
         self.dir = "./"
